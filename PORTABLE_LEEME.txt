@@ -1,0 +1,16 @@
+MUAKMUAK - APLICACIÓN DE ESTUDIO JURÍDICO
+
+Bienvenido a Muakmuak.
+
+Esta es una aplicación portable para Windows.
+
+INSTRUCCIONES:
+1. Extrae el contenido del archivo ZIP.
+2. Ejecuta muakmuak.exe.
+3. Crea tu perfil y comienza a estudiar.
+
+No necesitas instalar el programa.
+
+Tus perfiles y tu progreso se guardan localmente.
+
+Desarrollado por Piero Alva.
