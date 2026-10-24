@@ -1,0 +1,11 @@
+import type { CategoryId } from './content';
+export type OfficialSource = {title:string;publisher:string;description:string;icon:string;url:string};
+const civil:OfficialSource={title:'Código Civil peruano',publisher:'Diario Oficial El Peruano',description:'D. Leg. 295 · Texto normativo actualizado.',icon:'📖',url:'https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60'};
+const general:OfficialSource={title:'Reglamento General de los Registros Públicos',publisher:'SUNARP · Capacitación Registral',description:'Publicidad, legalidad, tracto sucesivo y prioridad.',icon:'🏛️',url:'https://scr.sunarp.gob.pe/resolucion-no-126-2012-sunarp-sn/'};
+const predios:OfficialSource={title:'Reglamento del Registro de Predios',publisher:'SUNARP · Resolución 097-2013',description:'Documentos, asientos, inmatriculación e inscripciones.',icon:'🏡',url:'https://scr.sunarp.gob.pe/resolucion-del-superintendente-nacional-de-los-registros-publicos-no-097-2013-sunarp-sn/'};
+const penal:OfficialSource={title:'Código Penal peruano',publisher:'Diario Oficial El Peruano',description:'D. Leg. 635 · Texto normativo para examinar tipos penales.',icon:'⚖️',url:'https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=2'};
+const notarial:OfficialSource={title:'Decreto Legislativo del Notariado',publisher:'Ministerio de Justicia y Derechos Humanos',description:'D. Leg. 1049 · Función notarial e instrumentos públicos.',icon:'✒️',url:'https://www.gob.pe/institucion/minjus/normas-legales/1792676-1049-2008'};
+const administrativo:OfficialSource={title:'Ley del Procedimiento Administrativo General',publisher:'Ministerio de Justicia y Derechos Humanos',description:'TUO de la Ley 27444 · Edición oficial actualizada en 2026.',icon:'📋',url:'https://www.gob.pe/institucion/minjus/informes-publicaciones/8441836-primera-edicion-oficial-del-texto-unico-ordenado-de-la-ley-n-27444-ley-del-procedimiento-administrativo-general-aprobado-por-el-decreto-supremo-n-006-2026-jus-actualizada-al-8-07-2026'};
+export const SOURCE_BY_CATEGORY:Record<CategoryId,OfficialSource[]>={
+ civil:[civil,general,predios],registral:[general,predios,civil],penal:[penal,civil],notarial:[notarial,general,civil],administrativo:[administrativo,general]
+};
